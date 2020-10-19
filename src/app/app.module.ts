@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ParentCompComponent } from './parent-comp/parent-comp.component';
+import { ChildCompComponent } from './child-comp/child-comp.component';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ParentCompComponent,
+    ChildCompComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
